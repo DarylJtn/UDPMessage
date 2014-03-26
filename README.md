@@ -1,30 +1,32 @@
-UDPMessage
-1
-COM577 Concurrent and Distributed Systems
-Assignment 2
-Date Set: 24 March 2014
-Date Due: 28 April 2014
+#Concurrent and Distributed Systems
+##Assignment 2
+Date Set: 24 March 2014  
+Date Due: 28 April 2014  
 This assignment carries 50% of the coursework marks for this module. It should be
-uploaded to Blackboard by midnight of the due date.
+uploaded to Blackboard by midnight of the due date.  
 
-Question 1(a):
+###Question 1(a):
 Modify the UDP chat server and client programs in Practical 6 so
 that the chat server does not respond directly to clients’ requests but allows clients to
 chat with each other. The server and client programs should implement the following
-protocol:
-1. The client joins the chat by sending a one word message containing the client’s
-name.
-2. The server maintains a list of client’s names, IP addresses and port numbers.
+protocol:  
+- 1. The client joins the chat by sending a one word message containing the client’s
+name.   
+  
+- 2. The server maintains a list of client’s names, IP addresses and port numbers.
 When a datagram is received and the IP address AND port number is not in the
 list, the server expects the message to contain the client’s name. If the message
 contains just one word, the server assumes that it is the client’s name and stores
 it (along with the IP address and the port number). Otherwise, it sends back a
-message to the client asking for a short, one-word name in the first message.
-3. The client signs off chat by sending a one word message, ’bye’.
-4. When a client signs off chat, the server removes his/her name, IP address and
-port number from the list of clients in chat.
-5. During chat, each message from the client begins with one of three reserved
-words –
+message to the client asking for a short, one-word name in the first message.  
+  
+- 3. The client signs off chat by sending a one word message, ’bye’.  
+  
+- 4. When a client signs off chat, the server removes his/her name, IP address and
+port number from the list of clients in chat.  
+  
+- 5. During chat, each message from the client begins with one of three reserved
+words :
 who
 ,
 whoami
@@ -44,7 +46,7 @@ clientname
 if this is a valid client name, sender’s name is prefixed and the message is
 sent to the recipient; if the client is not in chat, the server returns an error
 message to the client and the names of clients who are still in chat.
-(80 marks)
+(80 marks)  
 2
 Marking Scheme
 General
