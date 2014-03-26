@@ -6,6 +6,7 @@ Date Set: 24 March 2014
 Date Due: 28 April 2014
 This assignment carries 50% of the coursework marks for this module. It should be
 uploaded to Blackboard by midnight of the due date.
+
 Question 1(a):
 Modify the UDP chat server and client programs in Practical 6 so
 that the chat server does not respond directly to clients’ requests but allows clients to
